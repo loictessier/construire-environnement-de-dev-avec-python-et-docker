@@ -3,6 +3,14 @@ Se construire un environnement de développement local sur mesure avec Python et
 ======================================================================================
 
 - `Installation sous macos`_
+- `Installation sous Windows`_
+
+  - `Installation sous Windows Pro, Entreprise ou Education`_
+  - `Installation sous Windows Home ou Famille`_
+  
+- `Installation sous Debian`_
+- `Installation sous Ubuntu`_
+- `Installation sous Fedora`_
 
 Installation de Docker sur différents systèmes
 ==============================================
@@ -61,7 +69,7 @@ Installation sous Windows
 
 L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
 
-Dans tous les cas, il va vous falloir activé les fonctionnalités de virtualisation dans votre BIOS. Ces fonctionnalité
+Dans tous les cas, il va vous falloir activer les fonctionnalités de virtualisation dans votre BIOS. Ces fonctionnalités
 
 
 
