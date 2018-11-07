@@ -3,14 +3,9 @@ Se construire un environnement de développement local sur mesure avec Python et
 ======================================================================================
 
 - `Installation sous macos`_
-- `Installation sous Windows`_
-
-  - `Installation sous Windows Pro, Entreprise ou Education`_
-  - `Installation sous Windows Home ou Famille`_
-  
+- `Installation sous Windows 64 bits`_
 - `Installation sous Debian`_
 - `Installation sous Ubuntu`_
-- `Installation sous Fedora`_
 
 Installation de Docker sur différents systèmes
 ==============================================
@@ -62,12 +57,42 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
   
-Installation sous Windows
-=========================
+Installation sous Windows 64 bits
+=================================
 
 L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
 
-Dans tous les cas, il va vous falloir activer les fonctionnalités de virtualisation dans votre BIOS. Ces fonctionnalités
+Dans tous les cas, il va vous falloir vérifier que votre ordinateur vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS, ce qui est le cas par défaut sur beaucoup de machine, mais pas toutes. Pour effectuer cette vérification:
+
+- Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
+- Si vous êtes sur Windows 8, choisissez **Start > Task Manager** et rendez-vous sur l'onglet **Performance**. Sous CPU, vous pouvez voir si la virtualisation est activée.
+
+**Si la vitualisation n'est pas activée**, il faut l'activer dans votre BIOS. Pour savoir comment procéder, taper dans google le modèle de votre ordinateur suivi de "enable virtualization". Vous trouverez alors très rapidement une procédure adaptée pour activer cette fonctionnalité.
+
+Installation sous Windows Pro, Entreprise ou Education
+------------------------------------------------------
+
+Après avoir vérifié que la virtualisation était supportée et activée (voir ci-dessus), nous allons pouvoir installer **Docker for windows**. Pour cette installation, les pré-requis système suivants doivent être vérifié:
+
+- Windows 10 64bits: Pro, Enterprise or Education (1607 Anniversary Update, Build 14393 ou plus récent)
+- Le CPU doit avoir un support du second niveau de translation d’adresse (SLAT - Second Level Address Translation). C'est normalement le cas sur les machines relativement récente (2010+).
+- Au moins 4 GB de RAM
+- - Si votre système ne rempli pas un des ces pré-requis, vous pouvez toujours installer `Docker Toolbox <https://docs.docker.com/toolbox/overview/>`_.
+
+Voici la procédure d'installation:
+
+1. Télécharger Docker for Windows Installer.exe depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ et exécutez l'installeur.
+2. Suivez la procédure, acceptez la licence et procédez à l'installation. Cliquez sur Finish une fois l'installation terminer et Docker démarrera automatiquement. Si Docker ne démarre pas, vous pouvez chercher Docker for Windows dans vos applications et le démarrer manuellement.
+
+.. raw:: html
+
+  <img src="https://docs.docker.com/docker-for-windows/images/docker-app-search.png" width="250">
+
+Installation sous Windows Home ou Famille
+-----------------------------------------
+
+
+
 
 
 
