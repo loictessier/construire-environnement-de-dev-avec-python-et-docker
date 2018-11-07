@@ -15,4 +15,21 @@ services:
             - MYSQL_USER=myuser
             - MYSQL_PASSWORD=myuserpass
         volumes:
-            - ./db:/var/lib/mysql 
+            - myproject-mysql-data:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: myproject-phpmyadmin
+        links:
+            - mysql:db
+        depends_on:
+            - mysql
+        ports:
+            - 8089:80
+        environment:
+            - MYSQL_USER=myuser
+            - MYSQL_PASSWORD=myuserpass
+            - MYSQL_ROOT_PASSWORD=root
+
+volumes:
+    myproject-mysql-data:
