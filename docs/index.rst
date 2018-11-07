@@ -46,7 +46,7 @@ Voilà, vous avez installé Docker avec succès. Afin de tester si votre install
   $ docker-machine --version
   docker-machine version 0.14.0, build 9ba6da9
   
-Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal:
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
 
   $ docker run --rm -p 80:80 --name webserver nginx
   
@@ -104,7 +104,7 @@ Voilà, vous avez installé Docker avec succès. Afin de tester si votre install
   $ docker-machine --version
   docker-machine version 0.14.0, build 9ba6da9
   
-Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal:
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
 
   $ docker run --rm -p 80:80 --name webserver nginx
   
@@ -116,6 +116,52 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 Installation sous Windows Home ou Famille
 -----------------------------------------
+
+Après avoir vérifié que la virtualisation était supportée et activée (voir `Installation sous Windows 64 bits`_) et avoir vérifié que votre windows est bien une version 64 bits, voici la procédure d'installation pour Docker Toolbox:
+
+- Télécharger la dernière version de `Virtualbox <https://download.virtualbox.org/virtualbox/5.2.20/VirtualBox-5.2.20-125813-Win.exe>`_ depuis le site officiel et exécuter l'installeur en acceptant la licence et en suivant les instructions.
+- Télécharger `DockerToolbox.exe <https://download.docker.com/win/stable/DockerToolbox.exe>`_ depuis le site officiel et exécuter l'installer puis accepter la licence.
+- Décocher Virtualbox dans les options d'installation (l'installeur utilise une ancienne version de virtualbox), car nous avons déjà installé la version la plus récente
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/57544ba378295ac4fdba53135f208196.png" width="500">
+  
+- Continuer l'installation en suivant les recommandations de l'installeur.
+- Executer Docker Quickstart Terminal et attendre que le script d'installation se termine.
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/51d0bbd1d17717dc9d65b7ff70e41c53.png" width="500">
+
+- Lorsque tout est installé, Docker Quickstart Terminal affiche une invite de commande
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/2a330cc3fce498fa4ac062e6b463b226.png" width="500">
+  
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans le Docker Quickstart Terminal::
+
+  $ docker --version
+  Docker version 18.03, build c97c6d6
+
+  $ docker-compose --version
+  docker-compose version 1.23.1, build 8dd22a9
+
+  $ docker-machine --version
+  docker-machine version 0.14.0, build 9ba6da9
+  
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+
+  $ docker run --rm -p 80:80 --name webserver nginx
+  
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse ip suivante `192.168.99.100 <http://192.168.99.100>`_ et voir s'afficher une page telle que celle-ci:
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png" width="500">
+
+
 
 
 
