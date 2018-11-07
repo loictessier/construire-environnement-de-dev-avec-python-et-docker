@@ -17,8 +17,6 @@ Installation de Docker sur différents systèmes
 
 L'objectif de ce document est de conduire l'étudiant pas à pas à travers l'installation de Docker sur différentes plateformes: macos, windows (Pro, Education, Home/Famille), Debian et Ubuntu.
 
-.. _`Installation sous macos`:
-
 Installation sous macos
 -------------------------
 
