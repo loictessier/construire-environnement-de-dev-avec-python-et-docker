@@ -25,6 +25,7 @@ Voici la procédure d'installation:
 3. essai 
 
 .. image:: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
+  :width: 200 px
 
 
 
