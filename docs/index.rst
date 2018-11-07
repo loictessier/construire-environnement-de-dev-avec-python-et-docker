@@ -35,7 +35,7 @@ Voici la procédure d'installation:
 4. Double-cliquez sur Docker.app dans votre répoertoire Application afin de démarrer Docker. Votre OS va vous demander d'authoriser Docker.app à accéder à votre ordinateur avec un accès privilégié en fournissant votre mot de passe. Cet accès privilégié est nécessaire pour que Docker puisse installer les composants réseau.
 5. L'icone de balaine dans votre bar de status signifie que Docker est en train de tourner et qu'il est accessible depuis votre terminal. En cliquant sur cet icone, vous avez accès aux préférences et autres options.
 
-Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal:
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
@@ -93,7 +93,7 @@ Voici la procédure d'installation:
 
   <img src="https://docs.docker.com/docker-for-windows/images/docker-app-search.png" width="250">
 
-Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe:
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
