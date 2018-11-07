@@ -46,7 +46,6 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
 .. raw:: html
-
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="300">
 
   
