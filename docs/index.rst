@@ -92,6 +92,18 @@ Voici la procédure d'installation:
 .. raw:: html
 
   <img src="https://docs.docker.com/docker-for-windows/images/docker-app-search.png" width="250">
+  
+3. Rendez-vous dans les settings de Docker qui faisant un click-droit sur l'icone Docker ci-dessous:
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/9c6dbe741cd5b50ba31260242fc57dff.png" width="300">
+  
+4. Une fois dans les settings, rendez-vous dans Shared Drives et sélectionnez les disques que vous désirez partager entre Windows et Docker, puis valider votre sélection avec Apply:
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/27422d04f4a6e198563007ee5be77711.png" width="500">
 
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe::
 
