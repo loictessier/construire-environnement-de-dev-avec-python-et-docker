@@ -23,7 +23,9 @@ Voici la procédure d'installation:
 1. Télécharger Docker.dmg depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-mac>`_.
 2. Double-cliquez sur l'image Docker.dmg afin d'ouvrir l'installeur et glissez/déposez le logo Docker sur le dossier Applications.
 
-.. image:: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
+.. raw:: html
+
+  <img src="https://docs.docker.com/docker-for-mac/images/docker-app-drag.png" width="500">
 
 4. Double-cliquez sur Docker.app dans votre répoertoire Application afin de démarrer Docker. Votre OS va vous demander d'authoriser Docker.app à accéder à votre ordinateur avec un accès privilégié en fournissant votre mot de passe. Cet accès privilégié est nécessaire pour que Docker puisse installer les composants réseau.
 5. L'icone de balaine dans votre bar de status signifie que Docker est en train de tourner et qu'il est accessible depuis votre terminal. En cliquant sur cet icone, vous avez accès aux préférences et autres options.
@@ -47,7 +49,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 .. raw:: html
 
-  <center><img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="300"></center>
+  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
   
 Installation sous Windows
