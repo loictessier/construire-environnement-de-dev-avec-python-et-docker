@@ -23,6 +23,7 @@ Voici la procédure d'installation:
 1. Télécharger Docker.dmg depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-mac>`_.
 2. Double-cliquez sur l'image Docker.dmg afin d'ouvrir l'installeur et glissez/déposez le logo Docker sur le dossier Applications.
 3. essai 
+
 .. image: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
 
 
