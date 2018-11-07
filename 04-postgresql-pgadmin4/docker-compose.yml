@@ -4,8 +4,27 @@ services:
         image: postgres:10.5
         container_name: myproject-postgres
         ports:
-            - "15432:5432"
+            - 15432:5432
         environment:
             - POSTGRES_PASSWORD=myuserpass
             - POSTGRES_DB=mydb
+        volumes:
+            - myproject-postgres-data:/var/lib/postgresql/data
+
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: myproject-pgadmin
+        ports:
+            - 5050:80
+        links:
+            - postgres
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=moi@moi.com
+            - PGADMIN_DEFAULT_PASSWORD=mypass
+        volumes:
+            - myproject-pgadmin-data:/var/lib/pgadmin
+            
+volumes:
+    myproject-postgres-data:
+    myproject-pgadmin-data:
 
