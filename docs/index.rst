@@ -2,12 +2,16 @@
 Se construire un environnement de développement local sur mesure avec Python et Docker
 ======================================================================================
 
+- `Installation sous macos`_
+
 Installation de Docker sur différents systèmes
 ==============================================
 
 L'objectif de ce document est de conduire l'étudiant pas à pas à travers l'installation de Docker sur différentes plateformes: macos, windows (Pro, Education, Home/Famille), Debian et Ubuntu.
 
-Instatallation sous macos
+.. _`Installation sous macos`:
+
+Installation sous macos
 -------------------------
 
 La présente section va vous conduire pas à pas dans l'installation de Docker pour Macos. Avant de commencer, voici les pré-requis système nécessaires pour que cette installation fonctionne:
