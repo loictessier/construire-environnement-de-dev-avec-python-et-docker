@@ -4,8 +4,8 @@ Se construire un environnement de développement local sur mesure avec Python et
 
 - `Installation sous macos`_
 - `Installation sous Windows 64 bits`_
-- `Installation sous Debian`_
-- `Installation sous Ubuntu`_
+- `Installation sous Debian 9`_
+- `Installation sous Ubuntu 18.04`_
 
 Installation de Docker sur différents systèmes
 ==============================================
@@ -172,8 +172,156 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 .. raw:: html
 
   <img src="https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png" width="500">
+  
+Installation sous Debian 9
+==========================
 
+- Mettez à jour vos paquets::
+  
+    $ sudo apt update
+    
+- Installer les pré-requis::
 
+  $ sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+  
+- Ajouter la clé GPG pour le dépôt officiel de Docker::
+
+  $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  
+- Ajouter le repo officiel de Docker aux sources de apt::
+
+  $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+  
+- Mettre à jour la base de données des paquets de apt::
+
+  $ sudo apt update
+  
+- Assurez-vous que vous aller installer Docker à partir du repo officiel de Docker et non à partir des dépôts par défaut de Debian::
+
+  $ apt-cache policy docker-ce
+  
+Vous verrez ceci, même si les numéros de version peuvent varier::
+
+  docker-ce:
+    Installed: (none)
+    Candidate: 18.06.1~ce~3-0~debian
+    Version table:
+      18.06.1~ce~3-0~debian 500
+        500 https://download.docker.com/linux/debian stretch/stable amd64 Packages
+        
+Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel de Docker pour Debian
+
+- Finalement, installez Docker CE::
+
+  $ sudo apt install docker-ce
+  
+- Ajoutez votre utilisateur au groupe docker::
+
+  $ sudo usermod -aG docker ${USER}
+  
+- Pour que l'ajout au groupe docker soit actif, exécutez la commande suivante::
+
+  $ su - ${USER}
+
+- Vérifiez que votre utilisateur appartient au groupe docker::
+
+  $ id -nG
+
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
+
+  $ docker --version
+  Docker version 18.03, build c97c6d6
+
+  $ docker-compose --version
+  docker-compose version 1.23.1, build 8dd22a9
+
+  $ docker-machine --version
+  docker-machine version 0.14.0, build 9ba6da9
+  
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+
+  $ docker run --rm -p 80:80 --name webserver nginx
+  
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+
+.. raw:: html
+
+  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
+
+Installation sous Ubuntu 18.04
+==============================
+
+- Mettez à jour vos paquets::
+  
+    $ sudo apt update
+    
+- Installer les pré-requis::
+
+  $ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  
+- Ajouter la clé GPG pour le dépôt officiel de Docker::
+
+  $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  
+- Ajouter le repo officiel de Docker aux sources de apt::
+
+  $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+  
+- Mettre à jour la base de données des paquets de apt::
+
+  $ sudo apt update
+  
+- Assurez-vous que vous aller installer Docker à partir du repo officiel de Docker et non à partir des dépôts par défaut de Debian::
+
+  $ apt-cache policy docker-ce
+  
+Vous verrez ceci, même si les numéros de version peuvent varier::
+
+  docker-ce:
+    Installed: (none)
+    Candidate: 18.03.1~ce~3-0~ubuntu
+    Version table:
+      18.03.1~ce~3-0~ubuntu 500
+          500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        
+Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel de Docker pour Ubuntu Bionic
+
+- Finalement, installez Docker CE::
+
+  $ sudo apt install docker-ce
+  
+- Ajoutez votre utilisateur au groupe docker::
+
+  $ sudo usermod -aG docker ${USER}
+  
+- Pour que l'ajout au groupe docker soit actif, exécutez la commande suivante::
+
+  $ su - ${USER}
+
+- Vérifiez que votre utilisateur appartient au groupe docker::
+
+  $ id -nG
+
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
+
+  $ docker --version
+  Docker version 18.03, build c97c6d6
+
+  $ docker-compose --version
+  docker-compose version 1.23.1, build 8dd22a9
+
+  $ docker-machine --version
+  docker-machine version 0.14.0, build 9ba6da9
+  
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+
+  $ docker run --rm -p 80:80 --name webserver nginx
+  
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+
+.. raw:: html
+
+  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
 
 
