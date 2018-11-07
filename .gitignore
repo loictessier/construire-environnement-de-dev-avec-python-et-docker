@@ -1,0 +1,4 @@
+**/db/**
+!**/db/.gitkeep
+.DS_Store
+*.swp
