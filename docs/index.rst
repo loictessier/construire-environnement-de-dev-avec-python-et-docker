@@ -22,10 +22,37 @@ Voici la procédure d'installation:
 
 1. Télécharger Docker.dmg depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-mac>`_.
 2. Double-cliquez sur l'image Docker.dmg afin d'ouvrir l'installeur et glissez/déposez le logo Docker sur le dossier Applications.
-3. essai 
 
 .. image:: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
-4. essai
+
+4. Double-cliquez sur Docker.app dans votre répoertoire Application afin de démarrer Docker. Votre OS va vous demander d'authoriser Docker.app à accéder à votre ordinateur avec un accès privilégié en fournissant votre mot de passe. Cet accès privilégié est nécessaire pour que Docker puisse installer les composants réseau.
+5. L'icone de balaine dans votre bar de status signifie que Docker est en train de tourner et qu'il est accessible depuis votre terminal. En cliquant sur cet icone, vous avez accès aux préférences et autres options.
+
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal:
+
+  $ docker --version
+  Docker version 18.03, build c97c6d6
+
+  $ docker-compose --version
+  docker-compose version 1.23.1, build 8dd22a9
+
+  $ docker-machine --version
+  docker-machine version 0.14.0, build 9ba6da9
+  
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal:
+
+  $ docker run --rm -p 80:80 --name webserver nginx
+  
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+
+.. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
+  
+Installation sous Windows
+=========================
+
+L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
+
+Dans tous les cas, il va vous falloir activé les fonctionnalités de virtualisation dans votre BIOS. Ces fonctionnalité
 
 
 
