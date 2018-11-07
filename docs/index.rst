@@ -62,12 +62,17 @@ Installation sous Windows 64 bits
 
 L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
 
-Dans tous les cas, il va vous falloir vérifier que votre ordinateur vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS, ce qui est le cas par défaut sur beaucoup de machine, mais pas toutes. Pour effectuer cette vérification:
+Dans tous les cas, il va vous falloir vérifier que votre ordinateur vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS ou UEFI, ce qui est le cas par défaut sur beaucoup de machine, mais pas toutes. Pour effectuer cette vérification:
 
 - Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
+
+.. raw:: html
+
+  <img src="https://i.gyazo.com/789e3e234bbf3348f18de154338c4ea4.png" width="500">
+
 - Si vous êtes sur Windows 8, choisissez **Start > Task Manager** et rendez-vous sur l'onglet **Performance**. Sous CPU, vous pouvez voir si la virtualisation est activée.
 
-**Si la vitualisation n'est pas activée**, il faut l'activer dans votre BIOS. Pour savoir comment procéder, taper dans google le modèle de votre ordinateur suivi de "enable virtualization". Vous trouverez alors très rapidement une procédure adaptée pour activer cette fonctionnalité.
+**Si la vitualisation n'est pas activée dans le BIOS ou l'UEFI**, il faut l'activer. Pour savoir comment procéder, taper dans google le modèle de votre ordinateur suivi de "enable virtualization". Vous trouverez alors très rapidement une procédure adaptée pour activer cette fonctionnalité.
 
 Installation sous Windows Pro, Entreprise ou Education
 ------------------------------------------------------
@@ -77,7 +82,7 @@ Après avoir vérifié que la virtualisation était supportée et activée (voir
 - Windows 10 64bits: Pro, Enterprise or Education (1607 Anniversary Update, Build 14393 ou plus récent)
 - Le CPU doit avoir un support du second niveau de translation d’adresse (SLAT - Second Level Address Translation). C'est normalement le cas sur les machines relativement récente (2010+).
 - Au moins 4 GB de RAM
-- - Si votre système ne rempli pas un des ces pré-requis, vous pouvez toujours installer `Docker Toolbox <https://docs.docker.com/toolbox/overview/>`_.
+- Si votre système ne rempli pas un des ces pré-requis, vous pouvez toujours installer `Docker Toolbox <https://docs.docker.com/toolbox/overview/>`_.
 
 Voici la procédure d'installation:
 
@@ -87,6 +92,27 @@ Voici la procédure d'installation:
 .. raw:: html
 
   <img src="https://docs.docker.com/docker-for-windows/images/docker-app-search.png" width="250">
+
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe:
+
+  $ docker --version
+  Docker version 18.03, build c97c6d6
+
+  $ docker-compose --version
+  docker-compose version 1.23.1, build 8dd22a9
+
+  $ docker-machine --version
+  docker-machine version 0.14.0, build 9ba6da9
+  
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal:
+
+  $ docker run --rm -p 80:80 --name webserver nginx
+  
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+
+.. raw:: html
+
+  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
 Installation sous Windows Home ou Famille
 -----------------------------------------
