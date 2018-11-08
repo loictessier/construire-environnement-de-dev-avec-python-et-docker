@@ -216,15 +216,15 @@ directement de la documentation de Docker. Elles ont été testées sur Debian S
 - Assurez-vous que vous aller installer Docker à partir du repo officiel de Docker et non à partir des dépôts par défaut de Debian::
 
   $ apt-cache policy docker-ce
-  
-Vous verrez ceci, même si les numéros de version peuvent varier::
 
-  docker-ce:
-    Installed: (none)
-    Candidate: 18.06.1~ce~3-0~debian
-    Version table:
-      18.06.1~ce~3-0~debian 500
-        500 https://download.docker.com/linux/debian stretch/stable amd64 Packages
+  Vous verrez ceci, même si les numéros de version peuvent varier::
+
+    docker-ce:
+      Installed: (none)
+      Candidate: 18.06.1~ce~3-0~debian
+      Version table:
+        18.06.1~ce~3-0~debian 500
+          500 https://download.docker.com/linux/debian stretch/stable amd64 Packages
         
 Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel 
 de Docker pour Debian
