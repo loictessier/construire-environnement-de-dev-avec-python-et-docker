@@ -3,9 +3,9 @@ Se construire un environnement de développement local sur mesure avec Python et
 ======================================================================================
 
 - `Installation sous macos`_
-- `Installation sous Windows 64 bits`_
-- `Installation sous Debian 9`_
-- `Installation sous Ubuntu 18.04`_
+- `Installation sous Windows`_
+- `Installation sous Debian`_
+- `Installation sous Ubuntu`_
 
 Installation de Docker sur différents systèmes
 ==============================================
@@ -62,7 +62,7 @@ Installation sous Windows 64 bits
 
 L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
 
-Dans tous les cas, il va vous falloir vérifier que votre ordinateur vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS ou UEFI, ce qui est le cas par défaut sur beaucoup de machine, mais pas toutes. Pour effectuer cette vérification:
+Dans tous les cas, il va vous falloir vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS ou UEFI, ce qui est le cas par défaut sur beaucoup de machines, mais pas toutes. Pour effectuer cette vérification:
 
 - Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard>`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
 
@@ -173,8 +173,8 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
   <img src="https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png" width="500">
   
-Installation sous Debian 9
-==========================
+Installation sous Debian
+========================
 
 - Mettez à jour vos paquets::
   
@@ -263,8 +263,8 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
-Installation sous Ubuntu 18.04
-==============================
+Installation sous Ubuntu
+========================
 
 - Mettez à jour vos paquets::
   
