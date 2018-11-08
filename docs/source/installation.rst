@@ -1,19 +1,10 @@
-======================================================================================
-Se construire un environnement de développement local sur mesure avec Python et Docker
-======================================================================================
-
-- `Installation sous macos`_
-- `Installation sous Windows`_
-- `Installation sous Debian`_
-- `Installation sous Ubuntu`_
-
 Installation de Docker sur différents systèmes
 ==============================================
 
 L'objectif de ce document est de conduire l'étudiant pas à pas à travers l'installation de Docker sur différentes plateformes: macos, windows (Pro, Education, Home/Famille), Debian et Ubuntu.
 
 Installation sous macos
--------------------------
+-----------------------
 
 La présente section va vous conduire pas à pas dans l'installation de Docker pour Macos. Avant de commencer, voici les pré-requis système nécessaires pour que cette installation fonctionne:
 
@@ -57,8 +48,8 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
   
-Installation sous Windows 64 bits
-=================================
+Installation sous Windows
+-------------------------
 
 L'installation windows va être différente selon votre version de l'OS. En effet, si vous disposez d'une version Pro ou Entreprise ou Education (1607 Anniversary Update, Build 14393 ou plus récent), vous pouvez bénéficier d'une version native de Docker. Si vous disposez d'une version Windows Home ou Famille, nous utiliserons Docker Toolbox.
 
@@ -75,7 +66,7 @@ Dans tous les cas, il va vous falloir vous assurer que les fonctionnalités de v
 **Si la vitualisation n'est pas activée dans le BIOS ou l'UEFI**, il faut l'activer. Pour savoir comment procéder, taper dans google le modèle de votre ordinateur suivi de "enable virtualization". Vous trouverez alors très rapidement une procédure adaptée pour activer cette fonctionnalité.
 
 Installation sous Windows Pro, Entreprise ou Education
-------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Après avoir vérifié que la virtualisation était supportée et activée (voir ci-dessus), nous allons pouvoir installer **Docker for windows**. Pour cette installation, les pré-requis système suivants doivent être vérifié:
 
@@ -127,7 +118,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
 Installation sous Windows Home ou Famille
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Après avoir vérifié que la virtualisation était supportée et activée (voir `Installation sous Windows 64 bits`_) et avoir vérifié que votre windows est bien une version 64 bits, voici la procédure d'installation pour Docker Toolbox:
 
@@ -174,7 +165,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   <img src="https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png" width="500">
   
 Installation sous Debian
-========================
+------------------------
 
 - Mettez à jour vos paquets::
   
@@ -264,7 +255,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
 
 Installation sous Ubuntu
-========================
+------------------------
 
 - Mettez à jour vos paquets::
   
