@@ -64,7 +64,7 @@ L'installation windows va être différente selon votre version de l'OS. En effe
 
 Dans tous les cas, il va vous falloir vérifier que votre ordinateur vous assurer que les fonctionnalités de virtualisation sont activées dans votre BIOS ou UEFI, ce qui est le cas par défaut sur beaucoup de machine, mais pas toutes. Pour effectuer cette vérification:
 
-- Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
+- Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard>`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
 
 .. raw:: html
 
@@ -86,7 +86,7 @@ Après avoir vérifié que la virtualisation était supportée et activée (voir
 
 Voici la procédure d'installation:
 
-1. Télécharger Docker for Windows Installer.exe depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ et exécutez l'installeur.
+1. Télécharger Docker for Windows Installer.exe depuis `le site officiel de Docker <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ et exécutez l'installeur.
 2. Suivez la procédure, acceptez la licence et procédez à l'installation. Cliquez sur Finish une fois l'installation terminer et Docker démarrera automatiquement. Si Docker ne démarre pas, vous pouvez chercher Docker for Windows dans vos applications et le démarrer manuellement.
 
 .. raw:: html
@@ -227,16 +227,31 @@ Notez que docker-ce n'est pas installé, mais que le candidat à l'installation 
 
   $ id -nG
 
+- Télécharger la dernière version de Docker Compose::
+
+  $ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+- Donner les permissions nécessaires à docker-compose::
+
+  $ sudo chmod +x /usr/local/bin/docker-compose
+
+- Télécharger et installer Docker Machine avec la commande suivante::
+
+  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&
+  mkdir -p "$HOME/bin" &&
+  curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
+  chmod +x "$HOME/bin/docker-machine.exe"
+
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
 
   $ docker-compose --version
-  docker-compose version 1.23.1, build 8dd22a9
+  docker-compose version 1.23.1, build 1719ceb
 
-  $ docker-machine --version
-  docker-machine version 0.14.0, build 9ba6da9
+  $ docker-machine version
+  docker-machine version 0.14.0, build 9371605
   
 Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
 
@@ -302,16 +317,31 @@ Notez que docker-ce n'est pas installé, mais que le candidat à l'installation 
 
   $ id -nG
 
+- Télécharger la dernière version de Docker Compose::
+
+  $ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+- Donner les permissions nécessaires à docker-compose::
+
+  $ sudo chmod +x /usr/local/bin/docker-compose
+
+- Télécharger et installer Docker Machine avec la commande suivante::
+
+  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&
+  mkdir -p "$HOME/bin" &&
+  curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
+  chmod +x "$HOME/bin/docker-machine.exe"
+
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
 
   $ docker-compose --version
-  docker-compose version 1.23.1, build 8dd22a9
+  docker-compose version 1.23.1, build 1719ceb
 
-  $ docker-machine --version
-  docker-machine version 0.14.0, build 9ba6da9
+  $ docker-machine version
+  docker-machine version 0.14.0, build 9371605
   
 Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
 
