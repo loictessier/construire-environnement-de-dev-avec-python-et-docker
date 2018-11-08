@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'construire-environnement-de-dev-avec-python-et-docker'
+project = 'Essai1 Essai2'
 copyright = '2018, Thierry Chappuis'
 author = 'Thierry Chappuis'
 
