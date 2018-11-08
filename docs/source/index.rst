@@ -18,9 +18,10 @@ Table des matières
 ==================
 
 .. toctree::
-   :maxdepth: 2
+    :numbered:
+    :maxdepth: 2
 
-   installation
+    installation
 
 
 Indices and tables
