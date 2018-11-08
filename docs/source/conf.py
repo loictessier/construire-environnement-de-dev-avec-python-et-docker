@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'apprendre-docker'
+project = 'construire-environnement-de-dev-avec-python-et-docker'
 copyright = '2018, Thierry Chappuis'
 author = 'Thierry Chappuis'
 
@@ -104,7 +104,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'apprendre-dockerdoc'
+htmlhelp_basename = 'construire-environnement-de-dev-avec-python-et-docker-doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -131,7 +131,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'apprendre-docker.tex', 'apprendre-docker Documentation',
+    (master_doc, 'construire-environnement-de-dev-avec-python-et-docker.tex', 'Construire un environnement de dev sur mesure avec Python et Docker - Documentation',
      'Thierry Chappuis', 'manual'),
 ]
 
@@ -141,7 +141,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'apprendre-docker', 'apprendre-docker Documentation',
+    (master_doc, 'construire-environnement-de-dev-avec-python-et-docker', 'Construire un environnement de dev sur mesure avec Python et Docker - Documentation',
      [author], 1)
 ]
 
@@ -152,8 +152,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'apprendre-docker', 'apprendre-docker Documentation',
-     author, 'apprendre-docker', 'One line description of project.',
+    (master_doc, 'construire-environnement-de-dev-avec-python-et-docker', 'Construire un environnement de dev sur mesure avec Python et Docker - Documentation',
+     author, 'construire-environnement-de-dev-avec-python-et-docker', 'Cours pour apprendre à utiliser Docker',
      'Miscellaneous'),
 ]
 
