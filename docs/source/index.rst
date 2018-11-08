@@ -10,6 +10,8 @@ Welcome to apprendre-docker's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   installation
+
 
 
 Indices and tables
