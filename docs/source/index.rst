@@ -12,12 +12,9 @@ conteneurs. La stratégie utilisée est d'emmener le lecteur à travers un séri
 pratiques permettants d'illustrer différents besoins du développement pour le web
 en python.
 
-Table des matières
-==================
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table des matières:
 
    installation
 
