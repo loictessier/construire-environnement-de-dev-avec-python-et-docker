@@ -19,9 +19,8 @@ Voici la procédure d'installation:
 1. Télécharger Docker.dmg depuis `le site officiel <https://store.docker.com/editions/community/docker-ce-desktop-mac>`_.
 2. Double-cliquez sur l'image Docker.dmg afin d'ouvrir l'installeur et glissez/déposez le logo Docker sur le dossier Applications.
 
-.. raw:: html
-
-  <img src="https://docs.docker.com/docker-for-mac/images/docker-app-drag.png" width="500">
+.. image:: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
+  :width: 500px
 
 4. Double-cliquez sur Docker.app dans votre répoertoire Application afin de démarrer Docker. Votre OS va vous demander d'authoriser Docker.app à accéder à votre ordinateur avec un accès privilégié en fournissant votre mot de passe. Cet accès privilégié est nécessaire pour que Docker puisse installer les composants réseau.
 5. L'icone de balaine dans votre bar de status signifie que Docker est en train de tourner et qu'il est accessible depuis votre terminal. En cliquant sur cet icone, vous avez accès aux préférences et autres options.
@@ -43,9 +42,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
   
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
-.. raw:: html
-
-  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
+.. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
+  :width: 500px
 
   
 Installation sous Windows
@@ -57,9 +55,8 @@ Dans tous les cas, il va vous falloir vous assurer que les fonctionnalités de v
 
 - Si vous êtes sur Windows 10, installer `Speccy <https://www.ccleaner.com/speccy/download/standard>`_. Lorsque vous démarrez ce logiciel, regarder sur l'onglet CPU Information pour vérifier si la virtualisation est supportée et activée.
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/789e3e234bbf3348f18de154338c4ea4.png" width="500">
+.. image:: https://i.gyazo.com/789e3e234bbf3348f18de154338c4ea4.png 
+  :width: 500px
 
 - Si vous êtes sur Windows 8, choisissez **Start > Task Manager** et rendez-vous sur l'onglet **Performance**. Sous CPU, vous pouvez voir si la virtualisation est activée.
 
@@ -80,21 +77,18 @@ Voici la procédure d'installation:
 1. Télécharger Docker for Windows Installer.exe depuis `le site officiel de Docker <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ et exécutez l'installeur.
 2. Suivez la procédure, acceptez la licence et procédez à l'installation. Cliquez sur Finish une fois l'installation terminer et Docker démarrera automatiquement. Si Docker ne démarre pas, vous pouvez chercher Docker for Windows dans vos applications et le démarrer manuellement.
 
-.. raw:: html
-
-  <img src="https://docs.docker.com/docker-for-windows/images/docker-app-search.png" width="250">
+.. image:: https://docs.docker.com/docker-for-windows/images/docker-app-search.png
+  :width: 250px
   
 3. Rendez-vous dans les settings de Docker qui faisant un click-droit sur l'icone Docker ci-dessous:
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/9c6dbe741cd5b50ba31260242fc57dff.png" width="300">
+.. image:: https://i.gyazo.com/9c6dbe741cd5b50ba31260242fc57dff.png 
+  :width: 300px
   
 4. Une fois dans les settings, rendez-vous dans Shared Drives et sélectionnez les disques que vous désirez partager entre Windows et Docker, puis valider votre sélection avec Apply:
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/27422d04f4a6e198563007ee5be77711.png" width="500">
+.. image:: https://i.gyazo.com/27422d04f4a6e198563007ee5be77711.png
+  :width: 500px
 
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe::
 
@@ -113,9 +107,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
   
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
-.. raw:: html
-
-  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
+.. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png"
+  :width: 500px
 
 Installation sous Windows Home ou Famille
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -126,22 +119,19 @@ Après avoir vérifié que la virtualisation était supportée et activée (voir
 - Télécharger `DockerToolbox.exe <https://download.docker.com/win/stable/DockerToolbox.exe>`_ depuis le site officiel et exécuter l'installer puis accepter la licence.
 - Décocher Virtualbox dans les options d'installation (l'installeur utilise une ancienne version de virtualbox), car nous avons déjà installé la version la plus récente
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/57544ba378295ac4fdba53135f208196.png" width="500">
+.. image:: https://i.gyazo.com/57544ba378295ac4fdba53135f208196.png
+  :width: 500px
   
 - Continuer l'installation en suivant les recommandations de l'installeur.
 - Executer Docker Quickstart Terminal et attendre que le script d'installation se termine.
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/51d0bbd1d17717dc9d65b7ff70e41c53.png" width="500">
+.. image:: https://i.gyazo.com/51d0bbd1d17717dc9d65b7ff70e41c53.png
+  :width: 500px
 
 - Lorsque tout est installé, Docker Quickstart Terminal affiche une invite de commande
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/2a330cc3fce498fa4ac062e6b463b226.png" width="500">
+.. image:: https://i.gyazo.com/2a330cc3fce498fa4ac062e6b463b226.png
+  :width: 500px
   
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans le Docker Quickstart Terminal::
 
@@ -160,9 +150,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
   
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse ip suivante `192.168.99.100 <http://192.168.99.100>`_ et voir s'afficher une page telle que celle-ci:
 
-.. raw:: html
-
-  <img src="https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png" width="500">
+.. image:: https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png
+  :width: 500px
   
 Installation sous Debian
 ------------------------
@@ -250,9 +239,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
   
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
-.. raw:: html
-
-  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
+.. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
+  :width: 500
 
 Installation sous Ubuntu
 ------------------------
@@ -340,9 +328,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
   
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
-.. raw:: html
-
-  <img src="https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png" width="500">
+.. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
+  :width: 500px
 
 
 
