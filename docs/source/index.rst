@@ -12,7 +12,7 @@ Ces pages ont pour objectif d'illustrer différents aspects de l'utilisation de
 Docker, depuis l'installation de l'outils jusqu'à la création et au partage de ses propres
 conteneurs. La stratégie utilisée est d'emmener le lecteur à travers un série d'exemples
 pratiques permettants d'illustrer différents besoins liés au développement web en python
- ou au déploiement de modèles d'apprentissage statistique.
+ou au déploiement de modèles d'apprentissage statistique.
 
 Table des matières
 ==================
