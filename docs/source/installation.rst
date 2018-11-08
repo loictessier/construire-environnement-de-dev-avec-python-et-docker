@@ -226,8 +226,8 @@ directement de la documentation de Docker. Elles ont été testées sur Debian S
         18.06.1~ce~3-0~debian 500
           500 https://download.docker.com/linux/debian stretch/stable amd64 Packages
         
-Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel 
-de Docker pour Debian
+  Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel 
+  de Docker pour Debian
 
 - Finalement, installez Docker CE::
 
@@ -318,13 +318,13 @@ de Docker. Elles ont été testées sur Ubuntu 16.04, 18.04 (LTS) et 18.10.
 
   $ apt-cache policy docker-ce
   
-Vous verrez ceci, même si les numéros de version peuvent varier::
+  Vous verrez ceci, même si les numéros de version peuvent varier::
 
-  docker-ce:
-    Installed: (none)
-    Candidate: 18.03.1~ce~3-0~ubuntu
-    Version table:
-      18.03.1~ce~3-0~ubuntu 500
+    docker-ce:
+      Installed: (none)
+      Candidate: 18.03.1~ce~3-0~ubuntu
+      Version table:
+        18.03.1~ce~3-0~ubuntu 500
           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
         
 Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo 
