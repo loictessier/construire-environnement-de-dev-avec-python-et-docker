@@ -68,17 +68,27 @@ Dans tous les cas, il va vous falloir vous assurer que les fonctionnalités de v
 Installation sous Windows Pro, Entreprise ou Education
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Après avoir vérifié que la virtualisation était supportée et activée (voir ci-dessus), nous allons pouvoir installer **Docker for windows**. Pour cette installation, les pré-requis système suivants doivent être vérifié:
+Après avoir vérifié que la virtualisation était supportée et activée (voir ci-dessus), nous 
+allons pouvoir installer **Docker for windows**. Ces instructions ont été testées sur un 
+Windows 10 Education (build?) installer sur un Laptop HP EliteBook. Les pré-requis système 
+suivants doivent être vérifié pour installer Docker for Windows:
 
-- Windows 10 64bits: Pro, Enterprise or Education (1607 Anniversary Update, Build 14393 ou plus récent)
-- Le CPU doit avoir un support du second niveau de translation d’adresse (SLAT - Second Level Address Translation). C'est normalement le cas sur les machines relativement récente (2010+).
+- Windows 10 64bits: Pro, Enterprise or Education (1607 Anniversary Update, 
+  Build 14393 ou plus récent)
+- Le CPU doit avoir un support du second niveau de translation d’adresse 
+  (SLAT - Second Level Address Translation). C'est normalement le cas sur les machines relativement 
+  récente (2010+).
 - Au moins 4 GB de RAM
-- Si votre système ne rempli pas un des ces pré-requis, vous pouvez toujours installer `Docker Toolbox <https://docs.docker.com/toolbox/overview/>`_.
+- Si votre système ne rempli pas un des ces pré-requis, vous pouvez toujours installer 
+  `Docker Toolbox <https://docs.docker.com/toolbox/overview/>`_.
 
 Voici la procédure d'installation:
 
-1. Télécharger Docker for Windows Installer.exe depuis `le site officiel de Docker <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ et exécutez l'installeur.
-2. Suivez la procédure, acceptez la licence et procédez à l'installation. Cliquez sur Finish une fois l'installation terminer et Docker démarrera automatiquement. Si Docker ne démarre pas, vous pouvez chercher Docker for Windows dans vos applications et le démarrer manuellement.
+1. Télécharger Docker for Windows Installer.exe depuis 
+   `le site officiel de Docker <https://store.docker.com/editions/community/docker-ce-desktop-windows>`_ 
+   et exécutez l'installeur.
+2. Suivez la procédure, acceptez la licence et procédez à l'installation. Cliquez sur Finish une 
+   fois l'installation terminer et Docker démarrera automatiquement. Si Docker ne démarre pas, vous pouvez chercher Docker for Windows dans vos applications et le démarrer manuellement.
 
 .. image:: https://docs.docker.com/docker-for-windows/images/docker-app-search.png
   :width: 250px
@@ -90,7 +100,8 @@ Voici la procédure d'installation:
   :width: 300px
   :align: center
   
-4. Une fois dans les settings, rendez-vous dans Shared Drives et sélectionnez les disques que vous désirez partager entre Windows et Docker, puis valider votre sélection avec Apply:
+4. Une fois dans les settings, rendez-vous dans Shared Drives et sélectionnez les disques 
+   que vous désirez partager entre Windows et Docker, puis valider votre sélection avec Apply:
 
 .. image:: https://i.gyazo.com/27422d04f4a6e198563007ee5be77711.png
   :width: 500px
@@ -120,11 +131,17 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 Installation sous Windows Home ou Famille
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Après avoir vérifié que la virtualisation était supportée et activée (voir `Installation sous Windows 64 bits`_) et avoir vérifié que votre windows est bien une version 64 bits, voici la procédure d'installation pour Docker Toolbox:
+Après avoir vérifié que la virtualisation était supportée et activée (voir `Installation sous Windows 64 bits`_) 
+et avoir vérifié que votre windows est bien une version 64 bits, voici la procédure d'installation 
+pour Docker Toolbox. Ces instructions a été testée sur un Windows 10 Home 64bits à jour installés 
+sur différentes machines.
 
-- Télécharger la dernière version de `Virtualbox <https://download.virtualbox.org/virtualbox/5.2.20/VirtualBox-5.2.20-125813-Win.exe>`_ depuis le site officiel et exécuter l'installeur en acceptant la licence et en suivant les instructions.
-- Télécharger `DockerToolbox.exe <https://download.docker.com/win/stable/DockerToolbox.exe>`_ depuis le site officiel et exécuter l'installer puis accepter la licence.
-- Décocher Virtualbox dans les options d'installation (l'installeur utilise une ancienne version de virtualbox), car nous avons déjà installé la version la plus récente
+- Télécharger la dernière version de `Virtualbox <https://download.virtualbox.org/virtualbox/5.2.20/VirtualBox-5.2.20-125813-Win.exe>`_ 
+  depuis le site officiel et exécuter l'installeur en acceptant la licence et en suivant les instructions.
+- Télécharger `DockerToolbox.exe <https://download.docker.com/win/stable/DockerToolbox.exe>`_ 
+  depuis le site officiel et exécuter l'installer puis accepter la licence.
+- Décocher Virtualbox dans les options d'installation (l'installeur utilise une ancienne version de 
+  virtualbox), car nous avons déjà installé la version la plus récente
 
 .. image:: https://i.gyazo.com/57544ba378295ac4fdba53135f208196.png
   :width: 500px
@@ -143,7 +160,8 @@ Après avoir vérifié que la virtualisation était supportée et activée (voir
   :width: 500px
   :align: center
   
-Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans le Docker Quickstart Terminal::
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez 
+les lignes suivantes dans le Docker Quickstart Terminal::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
@@ -154,11 +172,13 @@ Voilà, vous avez installé Docker avec succès. Afin de tester si votre install
   $ docker-machine --version
   docker-machine version 0.14.0, build 9ba6da9
   
-Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande 
+suivante dans votre terminal::
 
   $ docker run --rm -p 80:80 --name webserver nginx
   
-Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse ip suivante `192.168.99.100 <http://192.168.99.100>`_ et voir s'afficher une page telle que celle-ci:
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à 
+l'adresse ip suivante `192.168.99.100 <http://192.168.99.100>`_ et voir s'afficher une page telle que celle-ci:
 
 .. image:: https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png
   :width: 500px
@@ -166,6 +186,12 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
   
 Installation sous Debian
 ------------------------
+
+La meilleure solution pour une installation complète de Docker, Docker-Compose et Docker-Machine sur 
+Debian est d'utiliser les dépôts officiels de Docker. La procédure qui suit va vous guider dans une
+installation complète de ces outils. Les instructions présentées ci-dessous sont une synthèse tirée
+directement de la documentation de Docker. Elles ont été testées sur Debian Stretch et Debian Buster 
+(testing).
 
 - Mettez à jour vos paquets::
   
@@ -200,7 +226,8 @@ Vous verrez ceci, même si les numéros de version peuvent varier::
       18.06.1~ce~3-0~debian 500
         500 https://download.docker.com/linux/debian stretch/stable amd64 Packages
         
-Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel de Docker pour Debian
+Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel 
+de Docker pour Debian
 
 - Finalement, installez Docker CE::
 
@@ -233,7 +260,8 @@ Notez que docker-ce n'est pas installé, mais que le candidat à l'installation 
   curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
   chmod +x "$HOME/bin/docker-machine.exe"
 
-Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez 
+les lignes suivantes dans un termina::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
@@ -244,11 +272,13 @@ Voilà, vous avez installé Docker avec succès. Afin de tester si votre install
   $ docker-machine version
   docker-machine version 0.14.0, build 9371605
   
-Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande 
+suivante dans votre terminal::
 
   $ docker run --rm -p 80:80 --name webserver nginx
   
-Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à 
+l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
   :width: 500px
@@ -256,6 +286,12 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 Installation sous Ubuntu
 ------------------------
+
+Pour une installation complète de Docker, Docker-Compose et Docker-Machine sur 
+Ubuntu, la méthode recommandée est d'utiliser les dépôts officiels de Docker pour Ubuntu. 
+La procédure qui suit va vous guider dans une installation complète de ces outils. Les 
+instructions présentées ci-dessous sont une synthèse tirée directement de la documentation 
+de Docker. Elles ont été testées sur Ubuntu 16.04, 18.04 (LTS) et 18.10.
 
 - Mettez à jour vos paquets::
   
@@ -277,7 +313,8 @@ Installation sous Ubuntu
 
   $ sudo apt update
   
-- Assurez-vous que vous aller installer Docker à partir du repo officiel de Docker et non à partir des dépôts par défaut de Debian::
+- Assurez-vous que vous aller installer Docker à partir du repo officiel de Docker et non à partir 
+  des dépôts par défaut de Debian::
 
   $ apt-cache policy docker-ce
   
@@ -290,7 +327,8 @@ Vous verrez ceci, même si les numéros de version peuvent varier::
       18.03.1~ce~3-0~ubuntu 500
           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
         
-Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo officiel de Docker pour Ubuntu Bionic
+Notez que docker-ce n'est pas installé, mais que le candidat à l'installation provient du repo 
+officiel de Docker pour Ubuntu Bionic
 
 - Finalement, installez Docker CE::
 
@@ -323,7 +361,8 @@ Notez que docker-ce n'est pas installé, mais que le candidat à l'installation 
   curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
   chmod +x "$HOME/bin/docker-machine.exe"
 
-Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un termina::
+Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, 
+tapez les lignes suivantes dans un termina::
 
   $ docker --version
   Docker version 18.03, build c97c6d6
@@ -334,11 +373,13 @@ Voilà, vous avez installé Docker avec succès. Afin de tester si votre install
   $ docker-machine version
   docker-machine version 0.14.0, build 9371605
   
-Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande suivante dans votre terminal::
+Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécutant la commande 
+suivante dans votre terminal::
 
   $ docker run --rm -p 80:80 --name webserver nginx
   
-Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
+Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre 
+à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
   :width: 500px
