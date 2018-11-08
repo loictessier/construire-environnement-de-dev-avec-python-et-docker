@@ -21,6 +21,7 @@ Voici la procédure d'installation:
 
 .. image:: https://docs.docker.com/docker-for-mac/images/docker-app-drag.png
   :width: 500px
+  :align: center
 
 4. Double-cliquez sur Docker.app dans votre répoertoire Application afin de démarrer Docker. Votre OS va vous demander d'authoriser Docker.app à accéder à votre ordinateur avec un accès privilégié en fournissant votre mot de passe. Cet accès privilégié est nécessaire pour que Docker puisse installer les composants réseau.
 5. L'icone de balaine dans votre bar de status signifie que Docker est en train de tourner et qu'il est accessible depuis votre terminal. En cliquant sur cet icone, vous avez accès aux préférences et autres options.
@@ -44,6 +45,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
   :width: 500px
+  :align: center
 
   
 Installation sous Windows
@@ -57,6 +59,7 @@ Dans tous les cas, il va vous falloir vous assurer que les fonctionnalités de v
 
 .. image:: https://i.gyazo.com/789e3e234bbf3348f18de154338c4ea4.png 
   :width: 500px
+  :align: center
 
 - Si vous êtes sur Windows 8, choisissez **Start > Task Manager** et rendez-vous sur l'onglet **Performance**. Sous CPU, vous pouvez voir si la virtualisation est activée.
 
@@ -79,16 +82,19 @@ Voici la procédure d'installation:
 
 .. image:: https://docs.docker.com/docker-for-windows/images/docker-app-search.png
   :width: 250px
+  :align: center
   
 3. Rendez-vous dans les settings de Docker qui faisant un click-droit sur l'icone Docker ci-dessous:
 
 .. image:: https://i.gyazo.com/9c6dbe741cd5b50ba31260242fc57dff.png 
   :width: 300px
+  :align: center
   
 4. Une fois dans les settings, rendez-vous dans Shared Drives et sélectionnez les disques que vous désirez partager entre Windows et Docker, puis valider votre sélection avec Apply:
 
 .. image:: https://i.gyazo.com/27422d04f4a6e198563007ee5be77711.png
   :width: 500px
+  :align: center
 
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans un terminal PowerShell ou cmd.exe::
 
@@ -109,6 +115,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png"
   :width: 500px
+  :align: center
 
 Installation sous Windows Home ou Famille
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -121,17 +128,20 @@ Après avoir vérifié que la virtualisation était supportée et activée (voir
 
 .. image:: https://i.gyazo.com/57544ba378295ac4fdba53135f208196.png
   :width: 500px
+  :align: center
   
 - Continuer l'installation en suivant les recommandations de l'installeur.
 - Executer Docker Quickstart Terminal et attendre que le script d'installation se termine.
 
 .. image:: https://i.gyazo.com/51d0bbd1d17717dc9d65b7ff70e41c53.png
   :width: 500px
+  :align: center
 
 - Lorsque tout est installé, Docker Quickstart Terminal affiche une invite de commande
 
 .. image:: https://i.gyazo.com/2a330cc3fce498fa4ac062e6b463b226.png
   :width: 500px
+  :align: center
   
 Voilà, vous avez installé Docker avec succès. Afin de tester si votre installation fonctionne, tapez les lignes suivantes dans le Docker Quickstart Terminal::
 
@@ -152,6 +162,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 .. image:: https://i.gyazo.com/f9d58a1464ad69be71d6e599bf347d44.png
   :width: 500px
+  :align: center
   
 Installation sous Debian
 ------------------------
@@ -240,7 +251,8 @@ Finalement, on peut tester si un serveur web tel que nginx fonctionne en exécut
 Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur web, vou srendre à l'adresse `localhost <http://localhost>`_ et voir s'afficher une page telle que celle-ci:
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
-  :width: 500
+  :width: 500px
+  :align: center
 
 Installation sous Ubuntu
 ------------------------
@@ -330,6 +342,7 @@ Une fois cette commande exécutée, vous devriez pouvoir ouvrir un navigateur we
 
 .. image:: https://gyazo.com/4ffcaebd22e46635bb54709fd266bddf.png
   :width: 500px
+  :align: center
 
 
 
