@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Essai1 Essai2'
+project = 'ApprendreDocker'
 copyright = '2018, Thierry Chappuis'
 author = 'Thierry Chappuis'
 
