@@ -1,1 +1,7 @@
-*/db
+**/db/**
+!**/db/.gitkeep
+.DS_Store
+*.swp
+
+.idea/
+.vscode/
